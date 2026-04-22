@@ -1,0 +1,93 @@
+/* ═══════════════════════════════════════════════════════════════
+   LibraViet – Design Tokens
+   Import vào index.css hoặc App.css
+═══════════════════════════════════════════════════════════════ */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Brand colors */
+  --primary:        #1565C0;
+  --primary-light:  #E3F2FD;
+  --primary-dark:   #0D47A1;
+  --secondary:      #00695C;
+  --secondary-light:#E0F2F1;
+  --accent:         #F57C00;
+  --accent-light:   #FFF3E0;
+
+  /* Semantic */
+  --danger:         #C62828;
+  --danger-light:   #FFEBEE;
+  --success:        #2E7D32;
+  --success-light:  #E8F5E9;
+  --warning:        #F9A825;
+  --warning-light:  #FFFDE7;
+  --info:           #0277BD;
+  --info-light:     #E1F5FE;
+
+  /* Surfaces */
+  --surface:        #FFFFFF;
+  --surface2:       #F5F7FA;
+  --surface3:       #ECEEF2;
+
+  /* Text */
+  --text1:  #1A1C1E;
+  --text2:  #44474A;
+  --text3:  #72767A;
+
+  /* Border */
+  --border:  rgba(0,0,0,0.10);
+  --border2: rgba(0,0,0,0.06);
+
+  /* Shadow */
+  --shadow:  0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.05);
+  --shadow2: 0 4px 16px rgba(0,0,0,0.10);
+
+  /* Radius */
+  --radius:    10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  /* Layout */
+  --sidebar-w:   240px;
+  --topbar-h:    60px;
+  --content-pad: 24px;
+
+  /* Font */
+  --font: 'Be Vietnam Pro', sans-serif;
+
+  /* Transition */
+  --t: 0.15s ease;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: var(--font);
+  background: var(--surface2);
+  color: var(--text1);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+button { font-family: var(--font); cursor: pointer; }
+input, select, textarea { font-family: var(--font); }
+a { text-decoration: none; color: inherit; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 3px; }
+
+/* ── Utility classes ── */
+.text-primary   { color: var(--primary); }
+.text-secondary { color: var(--text2); }
+.text-muted     { color: var(--text3); }
+.text-danger    { color: var(--danger); }
+.text-success   { color: var(--success); }
+.text-warning   { color: var(--warning); }
+.fw-500 { font-weight: 500; }
+.fw-600 { font-weight: 600; }
+.fw-700 { font-weight: 700; }
+.fs-12  { font-size: 12px; }
+.fs-13  { font-size: 13px; }
+.fs-11  { font-size: 11px; }
