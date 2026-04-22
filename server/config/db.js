@@ -15,6 +15,13 @@ const sequelize = new Sequelize({
     createdAt: 'created_at',
     updatedAt: 'updated_at',
   },
+  // ⬇️ THÊM PHẦN NÀY VÀO ⬇️
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false  // Chấp nhận SSL tự ký từ Neon
+    }
+  }
 });
 
 const connectDB = async () => {
