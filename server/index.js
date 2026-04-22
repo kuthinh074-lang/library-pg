@@ -24,8 +24,8 @@ const defaultClientOrigins = [
   'http://127.0.0.1:3001', 
   'http://127.0.0.1:3002',
   // Thêm URL Vercel của bạn:
-  'https://library-pg-zeki.vercel.app/',
-  'https://library-pg-6aka.vercel.app/'
+  'https://library-pg-zeki.vercel.app',
+  'https://library-pg-6aka.vercel.app'
 ];
 
 const clientOrigins = [
